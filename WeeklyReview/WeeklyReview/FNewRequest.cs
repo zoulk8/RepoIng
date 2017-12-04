@@ -99,6 +99,17 @@ namespace WeeklyReview
 
             //Variables con valores: nameReq, descReq, nameSolicReq, priorityReq, assignedUserReq,  nameSolicReq
             //Variables:  dateFinal, dateInit
+            if(!string.IsNullOrEmpty(nameReq) &&
+                !string.IsNullOrEmpty(descReq))
+            {
+                MessageBox.Show("Su Nueva Solicitud ha sido creada exitosamente.","New Request",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                clearFields(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("No pudo crearse su nueva solicitud, verifique información.", "New Request", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private int verifyingData( int asocReq)
@@ -112,6 +123,16 @@ namespace WeeklyReview
             dateTPFinalReq.MinDate = max;
         }
 
+        private void clearFields(object sender, EventArgs e)
+        {
+            txtBNameReq.Text = string.Empty;
+            txtBDescReq.Text = string.Empty;
+            this.wRCatAsocTableAdapter1.Fill(this.bD_BIPlatformDataSet3.WRCatAsoc);
+            this.wRCatPriorityReqTableAdapter.Fill(this.bD_BIPlatformDataSet1.WRCatPriorityReq);
+            this.wRCatAsocTableAdapter.Fill(this.bD_BIPlatformDataSet.WRCatAsoc);
+            dateTPInitReq.MinDate = DateTime.Today;
+            dateTPFinalReq.MinDate = DateTime.Today;
+        }
 
 
 

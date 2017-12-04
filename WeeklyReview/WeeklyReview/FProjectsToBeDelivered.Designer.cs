@@ -28,33 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DTPDateFinalProj = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBNameProj = new System.Windows.Forms.TextBox();
+            this.txtBDescProj = new System.Windows.Forms.TextBox();
+            this.DTPDateInitProj = new System.Windows.Forms.DateTimePicker();
+            this.txtBCommentsProj = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.errorNameProj = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorDescProj = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorDate1Proj = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorDate2Proj = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorCommentsProj = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameProj)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDescProj)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDate1Proj)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDate2Proj)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCommentsProj)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.DTPDateFinalProj);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtBNameProj);
+            this.groupBox1.Controls.Add(this.txtBDescProj);
+            this.groupBox1.Controls.Add(this.DTPDateInitProj);
+            this.groupBox1.Controls.Add(this.txtBCommentsProj);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -68,6 +79,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Project To Be Delivered";
             // 
+            // DTPDateFinalProj
+            // 
+            this.DTPDateFinalProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTPDateFinalProj.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTPDateFinalProj.Location = new System.Drawing.Point(66, 240);
+            this.DTPDateFinalProj.Name = "DTPDateFinalProj";
+            this.DTPDateFinalProj.Size = new System.Drawing.Size(103, 20);
+            this.DTPDateFinalProj.TabIndex = 11;
+            this.DTPDateFinalProj.Value = new System.DateTime(2017, 11, 23, 15, 15, 12, 0);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(38, 240);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Al:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(30, 211);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Del:";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
@@ -75,48 +118,50 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(117, 411);
+            this.button1.Location = new System.Drawing.Point(109, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // txtBNameProj
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(298, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtBNameProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBNameProj.Location = new System.Drawing.Point(6, 32);
+            this.txtBNameProj.Name = "txtBNameProj";
+            this.txtBNameProj.Size = new System.Drawing.Size(277, 20);
+            this.txtBNameProj.TabIndex = 7;
             // 
-            // textBox2
+            // txtBDescProj
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(9, 93);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 78);
-            this.textBox2.TabIndex = 6;
+            this.txtBDescProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBDescProj.Location = new System.Drawing.Point(9, 93);
+            this.txtBDescProj.Multiline = true;
+            this.txtBDescProj.Name = "txtBDescProj";
+            this.txtBDescProj.Size = new System.Drawing.Size(274, 78);
+            this.txtBDescProj.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // DTPDateInitProj
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(66, 211);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2017, 11, 23, 15, 15, 12, 0);
+            this.DTPDateInitProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTPDateInitProj.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTPDateInitProj.Location = new System.Drawing.Point(66, 211);
+            this.DTPDateInitProj.Name = "DTPDateInitProj";
+            this.DTPDateInitProj.Size = new System.Drawing.Size(103, 20);
+            this.DTPDateInitProj.TabIndex = 5;
+            this.DTPDateInitProj.Value = new System.DateTime(2017, 11, 23, 15, 15, 12, 0);
+            this.DTPDateInitProj.ValueChanged += new System.EventHandler(this.DTPDateInitProj_ValueChanged);
             // 
-            // textBox1
+            // txtBCommentsProj
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 311);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 84);
-            this.textBox1.TabIndex = 4;
+            this.txtBCommentsProj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBCommentsProj.Location = new System.Drawing.Point(6, 311);
+            this.txtBCommentsProj.Multiline = true;
+            this.txtBCommentsProj.Name = "txtBCommentsProj";
+            this.txtBCommentsProj.Size = new System.Drawing.Size(277, 84);
+            this.txtBCommentsProj.TabIndex = 4;
             // 
             // label4
             // 
@@ -162,37 +207,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre del Proyecto:";
             // 
-            // label5
+            // errorNameProj
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(30, 211);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Del:";
+            this.errorNameProj.ContainerControl = this;
             // 
-            // label6
+            // errorDescProj
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(38, 240);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Al:";
+            this.errorDescProj.ContainerControl = this;
             // 
-            // dateTimePicker2
+            // errorDate1Proj
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(66, 240);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(103, 20);
-            this.dateTimePicker2.TabIndex = 11;
-            this.dateTimePicker2.Value = new System.DateTime(2017, 11, 23, 15, 15, 12, 0);
+            this.errorDate1Proj.ContainerControl = this;
+            // 
+            // errorDate2Proj
+            // 
+            this.errorDate2Proj.ContainerControl = this;
+            // 
+            // errorCommentsProj
+            // 
+            this.errorCommentsProj.ContainerControl = this;
             // 
             // FProjectsToBeDelivered
             // 
@@ -203,8 +236,14 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FProjectsToBeDelivered";
             this.Text = "ProjectsToBeDelivered";
+            this.Load += new System.EventHandler(this.FProjectsToBeDelivered_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameProj)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDescProj)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDate1Proj)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDate2Proj)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorCommentsProj)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,16 +252,21 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBNameProj;
+        private System.Windows.Forms.TextBox txtBDescProj;
+        private System.Windows.Forms.DateTimePicker DTPDateInitProj;
+        private System.Windows.Forms.TextBox txtBCommentsProj;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DTPDateFinalProj;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider errorNameProj;
+        private System.Windows.Forms.ErrorProvider errorDescProj;
+        private System.Windows.Forms.ErrorProvider errorDate1Proj;
+        private System.Windows.Forms.ErrorProvider errorDate2Proj;
+        private System.Windows.Forms.ErrorProvider errorCommentsProj;
     }
 }
