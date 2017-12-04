@@ -1,0 +1,42 @@
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\bin\Debug\WeeklyReview.exe.config
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\bin\Debug\WeeklyReview.exe
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\bin\Debug\WeeklyReview.pdb
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.csprojResolveAssemblyReference.cache
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.IndexForm.resources
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.Properties.Resources.resources
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.csproj.GenerateResource.Cache
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.exe
+c:\users\mxhera06\documents\visual studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.pdb
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEditNewRequest.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEmergenciesAttended.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FNewRequest.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FProjectsToBeDelivered.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FRequirements.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FWMTasks.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEditEmergenciesAttended.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEditProjectsToBeDelivered.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEditRequirements.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FEditWMTasks.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.FViewListToDo.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\bin\Debug\WeeklyReview.exe.config
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.exe
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.csprojResolveAssemblyReference.cache
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FEditEmergenciesAttended.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FEditProjectsToBeDelivered.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FEditRequirements.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FEditWMTasks.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FEmergenciesAttended.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.IndexForm.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FNewRequest.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FProjectsToBeDelivered.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FRequirements.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FViewListToDo.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.FWMTasks.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.Properties.Resources.resources
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.csproj.GenerateResource.Cache
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\bin\Debug\WeeklyReview.exe
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\bin\Debug\WeeklyReview.pdb
+C:\Users\MXHERA06\Documents\Visual Studio 2012\Projects\WeeklyReview01122017\WeeklyReview\obj\Debug\WeeklyReview.pdb
+C:\Users\MXHERA06\Desktop\WeeklyReview\WeeklyReview\bin\Debug\WeeklyReview.exe.config
+C:\Users\MXHERA06\Desktop\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.exe
+C:\Users\MXHERA06\Desktop\WeeklyReview\WeeklyReview\obj\Debug\WeeklyReview.pdb

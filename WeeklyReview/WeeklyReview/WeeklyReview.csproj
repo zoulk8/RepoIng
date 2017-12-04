@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA5E2990-A3CA-4529-A181-971BB4A3C7EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeeklyReview</RootNamespace>
+    <AssemblyName>WeeklyReview</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD_BIPlatformDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIPlatformDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_BIPlatformDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIPlatformDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_BIPlatformDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIPlatformDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_BIPlatformDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIPlatformDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_DataSetProjectName.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_DataSetProjectName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_BIPlatformDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIPlatformDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FEditEmergenciesAttended.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditEmergenciesAttended.Designer.cs">
+      <DependentUpon>FEditEmergenciesAttended.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEditRequirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditRequirements.Designer.cs">
+      <DependentUpon>FEditRequirements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEditWMTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditWMTasks.Designer.cs">
+      <DependentUpon>FEditWMTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmergenciesAttended.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmergenciesAttended.Designer.cs">
+      <DependentUpon>FEmergenciesAttended.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIndex.Designer.cs">
+      <DependentUpon>FIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNewRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNewRequest.Designer.cs">
+      <DependentUpon>FNewRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEditProjectsToBeDelivered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEditProjectsToBeDelivered.Designer.cs">
+      <DependentUpon>FEditProjectsToBeDelivered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRequirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRequirements.Designer.cs">
+      <DependentUpon>FRequirements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FViewListToDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FViewListToDo.Designer.cs">
+      <DependentUpon>FViewListToDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWMTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWMTasks.Designer.cs">
+      <DependentUpon>FWMTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="FProjectsToBeDelivered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProjectsToBeDelivered.Designer.cs">
+      <DependentUpon>FProjectsToBeDelivered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FEditEmergenciesAttended.resx">
+      <DependentUpon>FEditEmergenciesAttended.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEditProjectsToBeDelivered.resx">
+      <DependentUpon>FEditProjectsToBeDelivered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEditRequirements.resx">
+      <DependentUpon>FEditRequirements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEditWMTasks.resx">
+      <DependentUpon>FEditWMTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmergenciesAttended.resx">
+      <DependentUpon>FEmergenciesAttended.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIndex.resx">
+      <DependentUpon>FIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNewRequest.resx">
+      <DependentUpon>FNewRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProjectsToBeDelivered.resx">
+      <DependentUpon>FProjectsToBeDelivered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRequirements.resx">
+      <DependentUpon>FRequirements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FViewListToDo.resx">
+      <DependentUpon>FViewListToDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FWMTasks.resx">
+      <DependentUpon>FWMTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BD_BIPlatformDataSet.xsc">
+      <DependentUpon>BD_BIPlatformDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIPlatformDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIPlatformDataSet.xss">
+      <DependentUpon>BD_BIPlatformDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet1.xsc">
+      <DependentUpon>BD_BIPlatformDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIPlatformDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIPlatformDataSet1.xss">
+      <DependentUpon>BD_BIPlatformDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet2.xsc">
+      <DependentUpon>BD_BIPlatformDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIPlatformDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIPlatformDataSet2.xss">
+      <DependentUpon>BD_BIPlatformDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet3.xsc">
+      <DependentUpon>BD_BIPlatformDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIPlatformDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIPlatformDataSet3.xss">
+      <DependentUpon>BD_BIPlatformDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetProjectName.xsc">
+      <DependentUpon>BD_DataSetProjectName.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetProjectName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_DataSetProjectName.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_DataSetProjectName.xss">
+      <DependentUpon>BD_DataSetProjectName.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet5.xsc">
+      <DependentUpon>BD_BIPlatformDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIPlatformDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIPlatformDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIPlatformDataSet5.xss">
+      <DependentUpon>BD_BIPlatformDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
