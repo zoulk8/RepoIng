@@ -61,8 +61,8 @@ namespace WeeklyReview
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //FEditNewRequest editNewReq = new FEditNewRequest();
-            //editNewReq.Show();
+            FEditNewRequest editNewReq = new FEditNewRequest();
+            editNewReq.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

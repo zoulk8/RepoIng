@@ -35,15 +35,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.cmBUsuAsignedReq = new System.Windows.Forms.ComboBox();
-            this.wRCatAsocBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_BIPlatformDataSet3 = new WeeklyReview.BD_BIPlatformDataSet3();
             this.dateTPInitReq = new System.Windows.Forms.DateTimePicker();
             this.cmBPriorityReq = new System.Windows.Forms.ComboBox();
-            this.wRCatPriorityReqBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_BIPlatformDataSet1 = new WeeklyReview.BD_BIPlatformDataSet1();
             this.cmBSolReq = new System.Windows.Forms.ComboBox();
-            this.wRCatAsocBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_BIPlatformDataSet = new WeeklyReview.BD_BIPlatformDataSet();
             this.txtBDescReq = new System.Windows.Forms.TextBox();
             this.txtBNameReq = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,11 +46,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.wRCatAsocBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_BIPlatformDataSet3 = new WeeklyReview.BD_BIPlatformDataSet3();
+            this.wRCatPriorityReqBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_BIPlatformDataSet1 = new WeeklyReview.BD_BIPlatformDataSet1();
+            this.wRCatAsocBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_BIPlatformDataSet = new WeeklyReview.BD_BIPlatformDataSet();
             this.wRCatAsocTableAdapter = new WeeklyReview.BD_BIPlatformDataSetTableAdapters.WRCatAsocTableAdapter();
             this.wRCatPriorityReqTableAdapter = new WeeklyReview.BD_BIPlatformDataSet1TableAdapters.WRCatPriorityReqTableAdapter();
             this.wRCatAsocTableAdapter1 = new WeeklyReview.BD_BIPlatformDataSet3TableAdapters.WRCatAsocTableAdapter();
             this.errorNameReq = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorDescReq = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorDReq1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorDReq2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorNameSol = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorPriority = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorUserAssigned = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wRCatAsocBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_BIPlatformDataSet3)).BeginInit();
@@ -66,6 +71,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bD_BIPlatformDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNameReq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDescReq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDReq1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDReq2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameSol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPriority)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorUserAssigned)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -152,16 +162,6 @@
             this.cmBUsuAsignedReq.TabIndex = 11;
             this.cmBUsuAsignedReq.ValueMember = "AsocId";
             // 
-            // wRCatAsocBindingSource1
-            // 
-            this.wRCatAsocBindingSource1.DataMember = "WRCatAsoc";
-            this.wRCatAsocBindingSource1.DataSource = this.bD_BIPlatformDataSet3;
-            // 
-            // bD_BIPlatformDataSet3
-            // 
-            this.bD_BIPlatformDataSet3.DataSetName = "BD_BIPlatformDataSet3";
-            this.bD_BIPlatformDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dateTPInitReq
             // 
             this.dateTPInitReq.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -170,6 +170,7 @@
             this.dateTPInitReq.Name = "dateTPInitReq";
             this.dateTPInitReq.Size = new System.Drawing.Size(101, 20);
             this.dateTPInitReq.TabIndex = 10;
+            this.dateTPInitReq.ValueChanged += new System.EventHandler(this.dateTPInitReq_ValueChanged);
             // 
             // cmBPriorityReq
             // 
@@ -184,16 +185,6 @@
             this.cmBPriorityReq.ValueMember = "PriorityRId";
             this.cmBPriorityReq.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // wRCatPriorityReqBindingSource
-            // 
-            this.wRCatPriorityReqBindingSource.DataMember = "WRCatPriorityReq";
-            this.wRCatPriorityReqBindingSource.DataSource = this.bD_BIPlatformDataSet1;
-            // 
-            // bD_BIPlatformDataSet1
-            // 
-            this.bD_BIPlatformDataSet1.DataSetName = "BD_BIPlatformDataSet1";
-            this.bD_BIPlatformDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // cmBSolReq
             // 
             this.cmBSolReq.DataSource = this.wRCatAsocBindingSource;
@@ -205,16 +196,6 @@
             this.cmBSolReq.Size = new System.Drawing.Size(245, 21);
             this.cmBSolReq.TabIndex = 8;
             this.cmBSolReq.ValueMember = "AsocId";
-            // 
-            // wRCatAsocBindingSource
-            // 
-            this.wRCatAsocBindingSource.DataMember = "WRCatAsoc";
-            this.wRCatAsocBindingSource.DataSource = this.bD_BIPlatformDataSet;
-            // 
-            // bD_BIPlatformDataSet
-            // 
-            this.bD_BIPlatformDataSet.DataSetName = "BD_DataSetSolicita";
-            this.bD_BIPlatformDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtBDescReq
             // 
@@ -300,6 +281,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de Solicitud:";
             // 
+            // wRCatAsocBindingSource1
+            // 
+            this.wRCatAsocBindingSource1.DataMember = "WRCatAsoc";
+            this.wRCatAsocBindingSource1.DataSource = this.bD_BIPlatformDataSet3;
+            // 
+            // bD_BIPlatformDataSet3
+            // 
+            this.bD_BIPlatformDataSet3.DataSetName = "BD_BIPlatformDataSet3";
+            this.bD_BIPlatformDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // wRCatPriorityReqBindingSource
+            // 
+            this.wRCatPriorityReqBindingSource.DataMember = "WRCatPriorityReq";
+            this.wRCatPriorityReqBindingSource.DataSource = this.bD_BIPlatformDataSet1;
+            // 
+            // bD_BIPlatformDataSet1
+            // 
+            this.bD_BIPlatformDataSet1.DataSetName = "BD_BIPlatformDataSet1";
+            this.bD_BIPlatformDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // wRCatAsocBindingSource
+            // 
+            this.wRCatAsocBindingSource.DataMember = "WRCatAsoc";
+            this.wRCatAsocBindingSource.DataSource = this.bD_BIPlatformDataSet;
+            // 
+            // bD_BIPlatformDataSet
+            // 
+            this.bD_BIPlatformDataSet.DataSetName = "BD_DataSetSolicita";
+            this.bD_BIPlatformDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // wRCatAsocTableAdapter
             // 
             this.wRCatAsocTableAdapter.ClearBeforeFill = true;
@@ -322,6 +333,26 @@
             this.errorDescReq.ContainerControl = this;
             this.errorDescReq.RightToLeftChanged += new System.EventHandler(this.button1_Click);
             // 
+            // errorDReq1
+            // 
+            this.errorDReq1.ContainerControl = this;
+            // 
+            // errorDReq2
+            // 
+            this.errorDReq2.ContainerControl = this;
+            // 
+            // errorNameSol
+            // 
+            this.errorNameSol.ContainerControl = this;
+            // 
+            // errorPriority
+            // 
+            this.errorPriority.ContainerControl = this;
+            // 
+            // errorUserAssigned
+            // 
+            this.errorUserAssigned.ContainerControl = this;
+            // 
             // FNewRequest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,6 +374,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bD_BIPlatformDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNameReq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDescReq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDReq1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDReq2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameSol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPriority)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorUserAssigned)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,5 +413,10 @@
         private BD_BIPlatformDataSet3TableAdapters.WRCatAsocTableAdapter wRCatAsocTableAdapter1;
         private System.Windows.Forms.ErrorProvider errorNameReq;
         private System.Windows.Forms.ErrorProvider errorDescReq;
+        private System.Windows.Forms.ErrorProvider errorDReq1;
+        private System.Windows.Forms.ErrorProvider errorDReq2;
+        private System.Windows.Forms.ErrorProvider errorNameSol;
+        private System.Windows.Forms.ErrorProvider errorPriority;
+        private System.Windows.Forms.ErrorProvider errorUserAssigned;
     }
 }
