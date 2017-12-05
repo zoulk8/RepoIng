@@ -66,12 +66,16 @@ namespace WeeklyReview
                 errorDate2Proj.SetError(DTPDateFinalProj, "*");
             }
 
-            if(!string.IsNullOrEmpty(nameProject) &&
+            if (!string.IsNullOrEmpty(nameProject) &&
                !string.IsNullOrEmpty(descProject) &&
                !string.IsNullOrEmpty(commentsProj))
             {
-                MessageBox.Show("Su proyecto ha sido dado de alta exitosamente.","Add Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Su proyecto ha sido dado de alta exitosamente.", "Add Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearFields(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Su proyecto no pudo ser guardado, verifique información.", "Add Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             

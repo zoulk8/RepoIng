@@ -28,23 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmBTypeTask = new System.Windows.Forms.ComboBox();
+            this.wRTTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_DataSetTypeTasks = new WeeklyReview.BD_DataSetTypeTasks();
+            this.txtBDescTask = new System.Windows.Forms.TextBox();
+            this.txtBNameTask = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorDescTask = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorNameTask = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorTypeTask = new System.Windows.Forms.ErrorProvider(this.components);
+            this.wRTTypeTableAdapter = new WeeklyReview.BD_DataSetTypeTasksTableAdapters.WRTTypeTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.wRTTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_DataSetTypeTasks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDescTask)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameTask)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTypeTask)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cmBTypeTask);
+            this.groupBox1.Controls.Add(this.txtBDescTask);
+            this.groupBox1.Controls.Add(this.txtBNameTask);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -52,7 +64,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.DarkOrange;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(260, 318);
+            this.groupBox1.Size = new System.Drawing.Size(282, 318);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Weekly/Monthly Tasks";
@@ -69,38 +81,47 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Acept";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // cmBTypeTask
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "DIARIA",
-            "SEMANAL",
-            "QUINCENAL",
-            "MENSUAL",
-            "BIMESTRAL",
-            "SEMESTRAL",
-            "ANUAL",
-            "OCASIONALMENTE"});
-            this.comboBox1.Location = new System.Drawing.Point(9, 197);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmBTypeTask.DataSource = this.wRTTypeBindingSource;
+            this.cmBTypeTask.DisplayMember = "TTypeDesc";
+            this.cmBTypeTask.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmBTypeTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmBTypeTask.FormattingEnabled = true;
+            this.cmBTypeTask.Location = new System.Drawing.Point(9, 197);
+            this.cmBTypeTask.Name = "cmBTypeTask";
+            this.cmBTypeTask.Size = new System.Drawing.Size(183, 21);
+            this.cmBTypeTask.TabIndex = 5;
+            this.cmBTypeTask.ValueMember = "TTypeId";
             // 
-            // textBox2
+            // wRTTypeBindingSource
             // 
-            this.textBox2.Location = new System.Drawing.Point(7, 100);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 57);
-            this.textBox2.TabIndex = 4;
+            this.wRTTypeBindingSource.DataMember = "WRTType";
+            this.wRTTypeBindingSource.DataSource = this.bD_DataSetTypeTasks;
             // 
-            // textBox1
+            // bD_DataSetTypeTasks
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 20);
-            this.textBox1.TabIndex = 3;
+            this.bD_DataSetTypeTasks.DataSetName = "BD_DataSetTypeTasks";
+            this.bD_DataSetTypeTasks.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtBDescTask
+            // 
+            this.txtBDescTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBDescTask.Location = new System.Drawing.Point(7, 100);
+            this.txtBDescTask.Multiline = true;
+            this.txtBDescTask.Name = "txtBDescTask";
+            this.txtBDescTask.Size = new System.Drawing.Size(247, 57);
+            this.txtBDescTask.TabIndex = 4;
+            // 
+            // txtBNameTask
+            // 
+            this.txtBNameTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBNameTask.Location = new System.Drawing.Point(7, 33);
+            this.txtBNameTask.Name = "txtBNameTask";
+            this.txtBNameTask.Size = new System.Drawing.Size(247, 20);
+            this.txtBNameTask.TabIndex = 3;
             // 
             // label3
             // 
@@ -135,17 +156,39 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de Tarea:";
             // 
+            // errorDescTask
+            // 
+            this.errorDescTask.ContainerControl = this;
+            // 
+            // errorNameTask
+            // 
+            this.errorNameTask.ContainerControl = this;
+            // 
+            // errorTypeTask
+            // 
+            this.errorTypeTask.ContainerControl = this;
+            // 
+            // wRTTypeTableAdapter
+            // 
+            this.wRTTypeTableAdapter.ClearBeforeFill = true;
+            // 
             // FWMTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 347);
+            this.ClientSize = new System.Drawing.Size(306, 347);
             this.Controls.Add(this.groupBox1);
             this.Name = "FWMTasks";
             this.Text = "Weekly/Monthly Tasks";
+            this.Load += new System.EventHandler(this.FWMTasks_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.wRTTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_DataSetTypeTasks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDescTask)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNameTask)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorTypeTask)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,11 +197,17 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmBTypeTask;
+        private System.Windows.Forms.TextBox txtBDescTask;
+        private System.Windows.Forms.TextBox txtBNameTask;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorDescTask;
+        private System.Windows.Forms.ErrorProvider errorNameTask;
+        private System.Windows.Forms.ErrorProvider errorTypeTask;
+        private BD_DataSetTypeTasks bD_DataSetTypeTasks;
+        private System.Windows.Forms.BindingSource wRTTypeBindingSource;
+        private BD_DataSetTypeTasksTableAdapters.WRTTypeTableAdapter wRTTypeTableAdapter;
     }
 }

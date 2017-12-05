@@ -92,6 +92,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_BIPlatformDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD_DataSetTypeTasks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_DataSetTypeTasks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_DataSetTypeUrgency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_DataSetTypeUrgency.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FEditEmergenciesAttended.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +319,28 @@
     </None>
     <None Include="BD_BIPlatformDataSet5.xss">
       <DependentUpon>BD_BIPlatformDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetTypeTasks.xsc">
+      <DependentUpon>BD_DataSetTypeTasks.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetTypeTasks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_DataSetTypeTasks.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_DataSetTypeTasks.xss">
+      <DependentUpon>BD_DataSetTypeTasks.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetTypeUrgency.xsc">
+      <DependentUpon>BD_DataSetTypeUrgency.xsd</DependentUpon>
+    </None>
+    <None Include="BD_DataSetTypeUrgency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_DataSetTypeUrgency.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_DataSetTypeUrgency.xss">
+      <DependentUpon>BD_DataSetTypeUrgency.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
